@@ -87,7 +87,7 @@ class WebpackLoader(object):
                 raise WebpackBundleLookupError('Cannot resolve bundle {0}.'.format(bundle_name))
 
             for chunk in chunks:
-                asset = assets['assets'][chunk]
+                asset = assets['assets']
                 if asset is None:
                     raise WebpackBundleLookupError('Cannot resolve asset {0}.'.format(chunk))
 
